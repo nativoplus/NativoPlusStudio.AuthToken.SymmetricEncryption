@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>NativoPlusStudio.AuthToken.SymmetricEncryption is part of the NativoPlusStudio.AuthToken set of libraries that can be used to encrypt and decrypt the auth token</Description>
+    <PackageProjectUrl>https://github.com/nativoplus/NativoPlusStudio.AuthToken.SymmetricEncryption</PackageProjectUrl>
+    <Version>1.0.0</Version>
+    <Nullable>disable</Nullable>
+    <PackageTags>auth token symmetric encryption nativoplus</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NativoPlusStudio.AuthToken.Core" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>
