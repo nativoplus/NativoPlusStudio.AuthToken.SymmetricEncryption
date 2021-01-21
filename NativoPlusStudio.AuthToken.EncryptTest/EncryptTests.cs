@@ -1,18 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NativoPlusStudio.AuthToken.Core;
-using NativoPlusStudio.AuthToken.SymmetricEncryption.Extensions;
 using Microsoft.Extensions.DependencyInjection;
+using NativoPlusStudio.AuthToken.Core.Interfaces;
 
 namespace NativoPlusStudio.AuthToken.EncryptTest
 {
     [TestClass]
-    public class EncryptTests
+    public class EncryptTests : BaseConfiguration
     {
         [TestMethod]
         public void TestMethod1()
         {
-            new AuthTokenServicesBuilder() { Services = new ServiceCollection() }.AddSymmetricEncryption("mykey");
-            Assert.IsTrue(true);
+            IAuthTokenGenerator authTokenGenerator = serviceProvider.GetRequiredService<IAuthTokenGenerator>();
+
+            var token = authTokenGenerator?.GetTokenAsync(protectedResource: configuration["Options:ProtectedResourceName"]).GetAwaiter().GetResult();
+            Assert.IsTrue(token.EncryptedToken != null);
         }
     }
 }

@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativoPlusStudio.AuthToken.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AF249113-0805-46BE-9573-A8D4C9B03DA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativoPlusStudio.AuthToken.EncryptTest", "NativoPlusStudio.AuthToken.EncryptTest\NativoPlusStudio.AuthToken.EncryptTest.csproj", "{058ED459-9B05-4058-9469-A16D9B5DE096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativoPlusStudio.AuthToken.EncryptTest", "NativoPlusStudio.AuthToken.EncryptTest\NativoPlusStudio.AuthToken.EncryptTest.csproj", "{058ED459-9B05-4058-9469-A16D9B5DE096}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{1B9D7F87-5160-4D88-BD41-B0F160455B0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleLib", "ExampleLib\ExampleLib.csproj", "{2F7F7AA6-F697-4242-8FA9-9BF0095AE890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{058ED459-9B05-4058-9469-A16D9B5DE096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{058ED459-9B05-4058-9469-A16D9B5DE096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{058ED459-9B05-4058-9469-A16D9B5DE096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B9D7F87-5160-4D88-BD41-B0F160455B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9D7F87-5160-4D88-BD41-B0F160455B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9D7F87-5160-4D88-BD41-B0F160455B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9D7F87-5160-4D88-BD41-B0F160455B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7F7AA6-F697-4242-8FA9-9BF0095AE890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7F7AA6-F697-4242-8FA9-9BF0095AE890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7F7AA6-F697-4242-8FA9-9BF0095AE890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7F7AA6-F697-4242-8FA9-9BF0095AE890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
